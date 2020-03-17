@@ -8,6 +8,7 @@ class App extends Component {
     e.preventDefault();
     console.log(this.bird.value);
     const bird = this.bird.value;
+    console.log(bird);
     const { BirdStore } = this.props;
     BirdStore.addBird(bird);
     this.bird.value = "";
